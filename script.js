@@ -18,9 +18,16 @@ function compareValues(sum,luckyNumber) {
 
 
 function birthdayIsLucky(){
-    const dob =dateOfBirth.value;
-    const sum = calculateSum(dob);
-    compareValues(sum,luckyNumber.value)
+    {
+        var dob = dateOfBirth.value;
+        var sum = calculateSum(dob);
+        if(sum&&dob)
+        compareValues(sum,luckyNumber.value)
+        else 
+        outputBox.innerText="please enter both feilds"
+    
+    }
+    
 
 }
 
